@@ -1,66 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For Loop</title>
-  
+  <title>For Loop — KrakeDev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>KrakeDev</h1>
-  <h2>Carrera de Desarrollo de Software</h2>
-  <h3>Autor: LopSig Dev</h3>
-  <h2>For Loop</h2>
 
-  <div>
-    <div>
-      <div>
-        <h4>Lista de Numeros</h4>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-prompt">~/</span>
+        <span class="brand-name">KrakeDev</span>
       </div>
-      <div>
-        salida a pantalla ejercicio 1
-      </div>
-      <div>
-        <button onclick="execute(1)"> Ejercicio 1</button>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4>Lista Inversa de Numeros</h4>
-      </div>
-      <div>
-        salida a pantalla ejercicio 2
-      </div>
-      <div>
-        <button onclick="execute(2)"> Ejercicio 2</button>
+      <div class="header-meta">
+        <span class="tag">Carrera de Desarrollo de Software</span>
       </div>
     </div>
-    <div>
-      <div>
-        <h4>Lista de Numeros Pares</h4>
-      </div>
-      <div>
-        salida a pantalla ejercicio 3
-      </div>
-      <div>
-        <button onclick="execute(3)"> Ejercicio 3</button>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4>Lista de Numeros Impares</h4>
-      </div>
-      <div>
-        salida a pantalla ejercicio 4
-      </div>
-      <div>
-        <button onclick="execute(4)"> Ejercicio 3</button>
-      </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="hero-autor">Autor: <span>LopSig Dev</span></p>
+      <h1 class="hero-titulo">For <span class="highlight">Loop</span></h1>
+      <p class="hero-desc">Ejercicios interactivos de bucles en JavaScript</p>
     </div>
   </div>
-  
 
+  <!-- GRID DE EJERCICIOS -->
+  <main class="main">
+    <div class="grid">
+
+      <!-- Ejercicio 1 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-num">01</span>
+          <h4 class="card-titulo">Lista de Números</h4>
+        </div>
+        <div class="card-code">
+          <span class="code-comment">// for i = 0; i &lt; 3; i++</span>
+        </div>
+        <div class="output" id="output1">
+          <span class="output-placeholder">Presiona el botón para ejecutar...</span>
+        </div>
+        <button class="btn" onclick="execute(1)">
+          <span class="btn-icon">▶</span> Ejecutar
+        </button>
+      </div>
+
+      <!-- Ejercicio 2 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-num">02</span>
+          <h4 class="card-titulo">Lista Inversa</h4>
+        </div>
+        <div class="card-code">
+          <span class="code-comment">// for i = 3; i &gt; 0; i--</span>
+        </div>
+        <div class="output" id="output2">
+          <span class="output-placeholder">Presiona el botón para ejecutar...</span>
+        </div>
+        <button class="btn" onclick="execute(2)">
+          <span class="btn-icon">▶</span> Ejecutar
+        </button>
+      </div>
+
+      <!-- Ejercicio 3 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-num">03</span>
+          <h4 class="card-titulo">Números Pares</h4>
+        </div>
+        <div class="card-code">
+          <span class="code-comment">// for i = 0; i &lt;= 10; i += 2</span>
+        </div>
+        <div class="output" id="output3">
+          <span class="output-placeholder">Presiona el botón para ejecutar...</span>
+        </div>
+        <button class="btn" onclick="execute(3)">
+          <span class="btn-icon">▶</span> Ejecutar
+        </button>
+      </div>
+
+      <!-- Ejercicio 4 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-num">04</span>
+          <h4 class="card-titulo">Números Impares</h4>
+        </div>
+        <div class="card-code">
+          <span class="code-comment">// for i = 1; i &lt;= 7; i += 2</span>
+        </div>
+        <div class="output" id="output4">
+          <span class="output-placeholder">Presiona el botón para ejecutar...</span>
+        </div>
+        <button class="btn" onclick="execute(4)">
+          <span class="btn-icon">▶</span> Ejecutar
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>LOPSIG DEV</span>
+
+  </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
